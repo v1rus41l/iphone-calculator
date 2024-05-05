@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <input id="output" placeholder="0" disabled></input>
+        <div class="buttons">
+           <btn style="background-color: lightgray;" id="clearAll">AC</btn>
+           <btn style="background-color: lightgray;" id="changeOperation">+/-</btn>
+           <btn style="background-color: lightgray; line-height: 70px;" id="degree">x<sup>y</sup></btn>
+           <btn onclick="inputOperation('/')" id="division">÷</btn>
+           <btn style="background-color: gray;" class="numBtn"  onclick="numInput(1)">1</btn>
+           <btn style="background-color: gray;" class="numBtn"  onclick="numInput(2)">2</btn>
+           <btn style="background-color: gray;" class="numBtn"  onclick="numInput(3)">3</btn>
+           <btn style="font-weight: 300;" onclick="inputOperation('*')" id="mult">x</btn>
+           <btn style="background-color: gray;" class="numBtn"  onclick="numInput(4)">4</btn>
+           <btn style="background-color: gray;" class="numBtn"  onclick="numInput(5)">5</btn>
+           <btn style="background-color: gray;" class="numBtn"  onclick="numInput(6)">6</btn>
+           <btn onclick="inputOperation('-')" id="sub">-</btn>
+           <btn style="background-color: gray;" class="numBtn"  onclick="numInput(7)">7</btn>
+           <btn style="background-color: gray;" class="numBtn"  onclick="numInput(8)">8</btn>
+           <btn style="background-color: gray;" class="numBtn"  onclick="numInput(9)">9</btn>
+           <btn onclick="inputOperation('+')" id="add">+</btn>
+           <btn style="width: 211px; border-radius: 50px; background-color: gray;" class=""  onclick="numInput(0)">0</btn>
+           <btn id="pointBtn" style="background-color: gray;" class="">.</btn>
+           <btn id="equal">=</btn>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
